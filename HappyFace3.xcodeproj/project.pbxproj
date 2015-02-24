@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A23DCC601A91C760006F34D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DCC5F1A91C760006F34D2 /* AppDelegate.swift */; };
-		A23DCC621A91C760006F34D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DCC611A91C760006F34D2 /* ViewController.swift */; };
 		A23DCC651A91C760006F34D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23DCC631A91C760006F34D2 /* Main.storyboard */; };
 		A23DCC671A91C760006F34D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23DCC661A91C760006F34D2 /* Images.xcassets */; };
 		A23DCC6A1A91C760006F34D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A23DCC681A91C760006F34D2 /* LaunchScreen.xib */; };
 		A23DCC761A91C760006F34D2 /* HappyFace3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DCC751A91C760006F34D2 /* HappyFace3Tests.swift */; };
+		A23DCC801A91C838006F34D2 /* HappyFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DCC7F1A91C838006F34D2 /* HappyFaceViewController.swift */; };
+		A23DCC821A91CF5F006F34D2 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DCC811A91CF5F006F34D2 /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		A23DCC5A1A91C760006F34D2 /* HappyFace3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyFace3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23DCC5E1A91C760006F34D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A23DCC5F1A91C760006F34D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A23DCC611A91C760006F34D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A23DCC641A91C760006F34D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A23DCC661A91C760006F34D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A23DCC691A91C760006F34D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A23DCC6F1A91C760006F34D2 /* HappyFace3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyFace3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23DCC741A91C760006F34D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A23DCC751A91C760006F34D2 /* HappyFace3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyFace3Tests.swift; sourceTree = "<group>"; };
+		A23DCC7F1A91C838006F34D2 /* HappyFaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HappyFaceViewController.swift; path = ../HappyFaceViewController.swift; sourceTree = "<group>"; };
+		A23DCC811A91CF5F006F34D2 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,10 @@
 		A23DCC5C1A91C760006F34D2 /* HappyFace3 */ = {
 			isa = PBXGroup;
 			children = (
-				A23DCC5F1A91C760006F34D2 /* AppDelegate.swift */,
-				A23DCC611A91C760006F34D2 /* ViewController.swift */,
+				A23DCC7F1A91C838006F34D2 /* HappyFaceViewController.swift */,
 				A23DCC631A91C760006F34D2 /* Main.storyboard */,
+				A23DCC811A91CF5F006F34D2 /* FaceView.swift */,
 				A23DCC661A91C760006F34D2 /* Images.xcassets */,
-				A23DCC681A91C760006F34D2 /* LaunchScreen.xib */,
 				A23DCC5D1A91C760006F34D2 /* Supporting Files */,
 			);
 			path = HappyFace3;
@@ -90,6 +91,8 @@
 		A23DCC5D1A91C760006F34D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A23DCC681A91C760006F34D2 /* LaunchScreen.xib */,
+				A23DCC5F1A91C760006F34D2 /* AppDelegate.swift */,
 				A23DCC5E1A91C760006F34D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A23DCC621A91C760006F34D2 /* ViewController.swift in Sources */,
+				A23DCC801A91C838006F34D2 /* HappyFaceViewController.swift in Sources */,
 				A23DCC601A91C760006F34D2 /* AppDelegate.swift in Sources */,
+				A23DCC821A91CF5F006F34D2 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
